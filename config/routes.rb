@@ -1,12 +1,16 @@
 Rails.application.routes.draw do
   root 'articles#index'
 
-  get 'articles/index' => 'articles#index'
-  get 'articles/new'
-  get 'articles/edit'
-  get 'articles/create'
-  get 'articles/update'
-  get 'articles/destroy'
+  # get '/articles' => 'articles#index'
+  # get '/articles/:id' => 'articles#show', as: 'show_article'
+  # get '/article/new' => 'articles#new', as: 'new_article'
+  # get '/articles/:id/edit' => 'articles#edit', as: 'edit_article'
+  # post '/articles' => 'articles#create', as: 'create_article'
+  # patch 'articles/:id' => 'articles#update'
+  # put 'articles/:id' => 'articles#update'
+  # get 'articles/destroy'
   resources :users
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :articles
+
 end
+ 

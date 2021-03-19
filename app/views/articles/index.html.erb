@@ -1,7 +1,4 @@
-<h1>Articles#index</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
-
-<h2>Hello Articles!</h2>
+<h1>Hello Articles!</h1>
 
 <table>
     <thead>
@@ -10,7 +7,7 @@
             <th>Title</th>
             <th>Author</th>
             <th>Body</th>
-            <th>View Count</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -20,8 +17,11 @@
                 <td><%= article.title %></td>
                 <td><%= article.author %></td>
                 <td><%= article.body %></td>
-                <td><%= article.view_count %></td>
+                <td><%= link_to 'Show', article_path(article) %></td>
+                <td><%= link_to 'Edit', edit_article_path(article) %></td>
             </tr>
         <% end %>
     </tbody>
 </table>
+
+<%= link_to 'New Article', new_article_path %>
