@@ -1,28 +1,38 @@
-<h1>Hello Articles!</h1>
-
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Body</th>
-            <th colspan="3">Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        <% @articles.each do |article| %>
+<div class="jumbotron jumbotron-fluid text-center">
+  <div class="container">
+    <h1 class="display-4" id="heading">Welcome to my blog</h1>
+    <div id="table">
+        <table>
+        <thead>
             <tr>
-                <td><%= article.id %></td>
-                <td><%= article.title %></td>
-                <td><%= article.author %></td>
-                <td><%= article.body %></td>
-                <td><%= link_to 'Show', article_path(article) %></td>
-                <td><%= link_to 'Edit', edit_article_path(article) %></td>
-                <td><%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: "Are you sure?" } %></td>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Body</th>
+                <th colspan="3">Actions</th>
             </tr>
-        <% end %>
-    </tbody>
-</table>
+        </thead>
+        <tbody id="t_body">
+            <% @articles.each do |article| %>
+                <tr id="tableRow">
+                    <td class="items"><%= article.id %></td>
+                    <td class="items"><%= article.title %></td>
+                    <td class="items"><%= article.author %></td>
+                    <td class="items"><%= article.body %></td>
+                    
+                    <td><button type="button" class="btn btn-outline-dark actionBtn"><%= link_to 'View Article', article_path(article) %></button></td>
+                    <td><button type="button" class="btn btn-outline-dark actionBtn"><%= link_to 'Edit', edit_article_path(article) %></button></td>
+                    <td><button type="button" class="btn btn-outline-dark actionBtn"><%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: "Are you sure?" } %></button></td>
+                </tr>
+            <% end %>
+        </tbody>
+        </table>
+    </div>
+    
+    <button type="button" class="btn btn-dark" id="createBtn"><%= link_to 'Create New Article', new_article_path %></button>
 
-<%= link_to 'Create New Article', new_article_path %>
+  </div>
+</div>
+
+
+
