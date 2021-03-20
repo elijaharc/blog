@@ -1,3 +1,50 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+#table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#heading {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+#createBtn a {
+  color: white;
+  text-decoration: none;
+}
+
+#createBtn {
+  margin-top: 1rem;
+}
+
+#tableRow a {
+  text-decoration: none;
+}
+
+.actionBtn a:hover {
+  color: white;
+}
+
+.actionBtn:hover {
+  color: red;
+}
+
+.actionBtn {
+  margin: 0;
+}
+
+.items {
+  padding: 0 2rem;
+}
+
+#show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
