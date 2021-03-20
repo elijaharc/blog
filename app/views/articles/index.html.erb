@@ -8,6 +8,7 @@
                 <th>ID</th>
                 <th>Title</th>
                 <th>Author</th>
+                <th>User ID</th>
                 <th>Body</th>
                 <th colspan="3">Actions</th>
             </tr>
@@ -18,6 +19,7 @@
                     <td class="items"><%= article.id %></td>
                     <td class="items"><%= article.title %></td>
                     <td class="items"><%= article.author %></td>
+                    <td class="items"><%= article.user_id %></td>
                     <td class="items"><%= article.body %></td>
                     
                     <td><button type="button" class="btn btn-outline-dark actionBtn"><%= link_to 'View Article', article_path(article) %></button></td>
