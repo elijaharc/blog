@@ -1,9 +1,10 @@
 <div class="container" id="home-container">
     <div class="jumbotron text-center text-white">
-        <h1 class="display-4" id="helloWorld">Hello, Guest!</h1>
-        <p class="lead">Welcome to my simple blog app. You may create a new blog entry using the 'Create New Article' button on the navigation bar.</p>
+        <h1 class="display-4 text-dark" id="helloWorld">Hello, Guest!</h1>
+        <p class="lead text-dark">Welcome to my simple blog app. Click the 'Create New Article' button to begin.</p>
+        <p class="lead text-dark">Don't forget to come back for more features to be added soon!</p>
         <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Sign Up!</a>
+            <%= link_to "Create New Article", new_article_path, class: "btn btn-primary btn-lg" %>
         </p>
     </div>
 </div>
