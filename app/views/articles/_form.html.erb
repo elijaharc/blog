@@ -4,28 +4,28 @@
         <%= render 'shared/errors'%>
         <%= form_with(model: @article, class: "shadow p-4 mb-4 bg-dark rounded", local: true) do |f| %>
           <div class="form-group row">
-            <%= f.label :title, class: "col-2 col-form-label text-light" %>
+            <%= f.label :title, class: "col-2 col-form-label text-light px-1 px-lg-5" %>
             <div class="col-10">
               <%= f.text_field :title, class: "form-control shadow rounded mb-2", placeholder: "Title" %>
             </div>
           </div>
 
           <div class="form-group row">
-            <%= f.label :author, class: "col-2 col-form-label text-light" %>
+            <%= f.label :author, class: "col-2 col-form-label text-light px-1 px-lg-5" %>
             <div class="col-10">
               <%= f.text_field :author, class: "form-control shadow rounded mb-2", placeholder: "Author" %>
             </div>
           </div>
 
           <div class="form-group row">
-            <%= f.label :body, class: "col-2 col-form-label text-light" %>
+            <%= f.label :body, class: "col-2 col-form-label text-light px-1 px-lg-5" %>
             <div class="col-10"> 
               <%= f.text_area :body, rows: 10, class: "form-control shadow rounded mb-2", placeholder: "Body" %>
             </div>
           </div>
 
           <div class="form-group row justify-content-center">
-            <%= f.submit class: "btn btn-outline-light btn-sm w-25 mt-3" %>
+            <%= f.submit class: "btn btn-outline-light w-auto mt-3" %>
           </div>
           
         <% end %>
