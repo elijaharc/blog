@@ -1,10 +1,12 @@
 <div class="container" id="home-container">
     <div class="jumbotron text-center text-white">
-        <p class="text-dark mb-3" id="helloGuest">Hello, Guest!</p>
-        <h1 class="lead text-dark display-4 mb-4">Welcome to my simple blog app.</h1>
-        <p class="text-muted">Click the 'Create New Post' button to begin.</p>
+        <p class="text-dark mb-3" id="helloGuest">Hello, <span>Guest!</span></p>
+        <h1 class="lead text-dark display-4" id="brand">Welcome to <span>Blogu</span>.</h1>
+        <p class="mb-4 text-secondary" id="tagline">Own your content.</p>
+        <hr class="text-muted mb-2 w-50 m-auto" id="lineBreak">
+        <p class="text-muted mt-3">Click the 'Create New Post' button to begin.</p>
         <p class="lead">
-            <%= link_to "Create New Post", new_article_path, class: "btn btn-primary btn-lg" %>
+            <%= link_to "Create New Post", new_article_path, class: "btn btn-primary btn-md", id: "homeCreate" %>
         </p>
     </div>
 </div>

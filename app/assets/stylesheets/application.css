@@ -15,7 +15,7 @@
  */
 
 #navBar {
-  background-color: black !important;
+  background-color: rgb(86, 163, 146) !important;
   padding: 0 1.5rem;
 }
 
@@ -33,12 +33,12 @@
 }
 
 #logo:hover {
-  color: rgb(98, 171, 255);
+  color: rgb(247, 247, 247);
   text-decoration: none;
 }
 
 #home-container {
-  margin-top: 25px;
+  margin-top: 4.5rem;
 }
 
 .jumbotron {
@@ -75,8 +75,38 @@ body {
 
 #helloGuest {
   font-size: 1.5rem;
+  font-weight: 300;
+}
+
+#helloGuest span {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+#brand span {
+  color: rgb(86, 163, 146);
+}
+
+#tagline {
+  font-weight: 400;
+  color: black;
 }
 
 #navbarNav .nav-link:hover {
-  color: rgb(98, 171, 255) !important;
+  color: rgb(226, 255, 226) !important;
+}
+
+#lineBreak {
+  display: flex;
+  justify-content: center;
+}
+
+#homeCreate {
+  background-color: rgb(86, 107, 163);
+  border: none !important;
+}
+
+#formPartial {
+  background-color: rgb(204, 178, 151);
 }
