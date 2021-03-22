@@ -4,7 +4,8 @@ class ArticlesController < ApplicationController
   # before_action means do this before anything else, then the only is for the functions that will use it
 
   def index
-    @articles = Article.all
+    # @articles = Article.all
+    @articles = Article.order('created_at desc')
   end
 
   def show
